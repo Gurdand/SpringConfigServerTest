@@ -1,12 +1,4 @@
-spring:
-  profiles: default
-server:
-  port: 9000  
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ 
+server.port=8761
+
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
